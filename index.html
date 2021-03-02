@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite Recipe</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>Favorite Recipes</h2>
+        <!-- <img src="./assets/icon/list.svg" alt="icon" class="icon" /> -->
+        <span class="icon-list" id="icon"></span>
+      </header>
+
+      <section class="list" id="list">
+        <div class="card">
+          <div class="card__image">
+            <img src="./assets/img/fried-chicken.jpg" alt="fried-chicken" class="ajsdkj" />
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">Fried Chicken</h2>
+            <div class="card__desc">
+              <h3>Ingredients</h3>
+              <ul>
+                <li>2 Whole Free-range, organic chickens</li>
+                <li>Vegetable oil</li>
+                <li>6 cups all-purpose flour</li>
+                <li>5 tablespoons salt</li>
+                <li>4 tablespoons ground black pepper</li>
+              </ul>
+            </div>
+
+            <a href="#" class="card__button">Read More</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./assets/img/pizza.jpg" alt="fried-chicken" />
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">Pizza Pizzas</h2>
+            <div class="card__desc">
+              <h3>Ingredients</h3>
+              <ul>
+                <li>2 tablespoons sugar</li>
+                <li>1 tablespoon kosher salt</li>
+                <li>1 tablespoon pure olive oil</li>
+                <li>3/4 cup warm water</li>
+                <li>2 cups bread flour (for bread machines)</li>
+              </ul>
+            </div>
+
+            <a href="#" class="card__button">Read More</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image">
+            <img src="./assets/img/satay.jpg" alt="Chicken satay" />
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">Chicken Satay</h2>
+            <div class="card__desc">
+              <h3>Ingredients</h3>
+              <ul>
+                <li>2 pounds chicken tenders</li>
+                <li>1 tablespoon curry powder</li>
+                <li>4 dashes hot sauce</li>
+                <li>2 cloves garlic, minced</li>
+                <li>1 shallot, minced</li>
+              </ul>
+            </div>
+
+            <a href="#" class="card__button">Read More</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./assets/img/fried-rice.jpg" alt="fried-rice" />
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">Fried Rice</h2>
+            <div class="card__desc">
+              <h3>Ingredients</h3>
+              <ul>
+                <li>2 tablespoon salted butter</li>
+                <li>2 tablespoon olive oil</li>
+                <li>One 12-ounce can spam, diced</li>
+                <li>1 orange bell pepper, diced</li>
+                <li>1 red bell pepper, diced</li>
+              </ul>
+            </div>
+
+            <a href="#" class="card__button">Read More</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      window.onload = function () {
+        let icon = document.querySelector("#icon");
+        let list = document.querySelector("#list");
+
+        icon.onclick = function () {
+          list.classList.toggle("grid");
+          icon.classList.toggle("icon-grid");
+        };
+      };
+    </script>
+  </body>
+</html>
